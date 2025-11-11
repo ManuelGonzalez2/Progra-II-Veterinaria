@@ -5,7 +5,6 @@
 from datetime import date 
 
 class Cliente:
-    # Un cliente tiene nombre, teléfono y correo
     def __init__(self, nombre: str, telefono: str, email: str):
         self.nombre = nombre
         self.telefono = telefono
@@ -16,7 +15,6 @@ class Cliente:
         return f"Cliente: {self.nombre} , con mail ({self.email})"
 
 class Mascota:
-    # Una mascota tiene especie, raza y fecha de nacimiento 
     def __init__(self, nombre: str, especie: str, raza: str, fecha_nacimiento: date):
         self.nombre = nombre
         self.especie = especie
@@ -34,7 +32,6 @@ class Mascota:
         return f"Mascota: {self.nombre} (Especie: {self.especie})"
 
 class Cita:
-    # Una cita tiene fecha, hora, motivo y veterinario
     def __init__(self, fecha: date, hora: str, motivo: str, veterinario: str, mascota: Mascota):
         self.fecha = fecha
         self.hora = hora
