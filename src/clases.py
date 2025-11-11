@@ -148,16 +148,20 @@ class Veterinaria:
         registro = f"Vacuna: {nombre_vacuna}, Fecha: {fecha}"
         mascota.historial_medico["vacunas"].append(registro)
         print(f"Vacuna añadida al historial de {mascota.nombre}.")
+
+    #Funcion para añadir el peso de la mascota
     def anadir_peso(self, mascota: Mascota, peso_kg: float, fecha: date):
         registro = {"fecha": fecha, "peso": peso_kg}
         mascota.historial_medico["peso"].append(registro)
         print(f"Peso ({peso_kg}kg) añadido al historial de {mascota.nombre}.")
 
+    #Funcion para añadir las observaciones del doctor
     def anadir_observacion(self, mascota: Mascota, observacion: str, fecha: date):
         registro = f"Fecha: {fecha} - Observación: {observacion}"
         mascota.historial_medico["observaciones"].append(registro)
         print(f"Observación añadida al historial de {mascota.nombre}.")
-    
+
+    #Funcion para añadir el tratamiento al que se va a someter
     def anadir_tratamiento(self, mascota: Mascota, tratamiento: str, fecha_inicio: date):
         registro = f"Tratamiento: {tratamiento}, Inicio: {fecha_inicio}"
         mascota.historial_medico["tratamientos"].append(registro)
