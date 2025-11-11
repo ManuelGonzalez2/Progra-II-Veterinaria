@@ -3,7 +3,7 @@ import streamlit as st
 
 # Lo que veremos en la pagina de inicio
 st.set_page_config(
-    page_title="Curae Veterinaria",
+    page_title="Curae Veterinaria", 
 )
 
 st.title("Curae Veterinaria - Inicio de Sesión")
