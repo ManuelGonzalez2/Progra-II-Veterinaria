@@ -1,3 +1,5 @@
+from datetime import date 
+
 class Mascota:
     def __init__(self, nombre: str, especie: str, raza: str, fecha_nacimiento: date):
         self.nombre = nombre
